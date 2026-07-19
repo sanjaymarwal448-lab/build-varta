@@ -311,9 +311,9 @@ a {
    ========================================== */
 .dashboard-container {
   display: grid;
-  grid-template-columns: 1fr 80px 1.25fr;
+  grid-template-columns: 1fr 100px 1.25fr;
   align-items: stretch;
-  gap: 1rem;
+  gap: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
@@ -652,7 +652,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 60px;
 }
 
 .circle-ring {
@@ -679,7 +678,6 @@ a {
   box-shadow: var(--shadow-sm), 0 0 0 6px rgba(255, 78, 0, 0.03), 0 0 0 12px rgba(255, 78, 0, 0.015);
   border: 1px solid rgba(255, 78, 0, 0.12);
   text-align: center;
-  margin-left: 60px;
 }
 
 .dial-glow {
@@ -754,42 +752,52 @@ a {
 /* Orbit Positioning - Placed circularly using angles */
 /* R = ~175px, center is 50%, 50% */
 /* CSS transforms are perfect to position around center */
-.card-voice {
-  top: 4%;
-  left: 62.5%;
-  transform: translateX(-50%);
-}
-
-.card-booking-auto {
-  top: 20%;
-  right: 4%;
-}
-
-.card-crm {
-  top: 50%;
-  right: -6%;
-  transform: translateY(-50%);
-}
-
-.card-avatars {
-  top: 80%;
-  right: 4%;
-}
-
-.card-saas {
-  bottom: -4%;
-  left: 62.5%;
-  transform: translateX(-50%);
+.card-whatsapp-auto {
+  top: 15%;
+  left: 8%;
+  right: auto;
 }
 
 .card-email-auto {
-  top: 76%;
-  left: 24%;
+  top: 50%;
+  left: 2%;
+  right: auto;
+  transform: translateY(-50%);
 }
 
-.card-whatsapp-auto {
-  top: 24%;
-  left: 24%;
+.card-saas {
+  top: 85%;
+  left: 8%;
+  right: auto;
+}
+
+.card-voice {
+  top: 15%;
+  left: auto;
+  right: 8%;
+  transform: none;
+}
+
+.card-booking-auto {
+  top: 50%;
+  left: auto;
+  right: 2%;
+  transform: translateY(-50%);
+}
+
+.card-crm {
+  top: 85%;
+  left: auto;
+  right: 8%;
+  transform: none;
+}
+
+.card-avatars {
+  top: auto;
+  bottom: -5%;
+  left: calc(50% - 82.5px);
+  right: auto;
+  transform: none;
 }
 
 .orbit-card:hover {
