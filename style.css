@@ -554,12 +554,12 @@ a {
 }
 
 /* Chaos Tag Coordinates */
-.tag-emails       { top: 10%; left: 2%; right: auto; animation-delay: 0s; }
-.tag-phone        { top: 45%; left: -4%; right: auto; animation-delay: 2s; }
-.tag-leads        { top: 75%; left: 2%; right: auto; animation-delay: 4s; }
-.tag-whatsapp     { top: 10%; left: auto; right: 14%; animation-delay: 0.8s; }
-.tag-bookings     { top: 36%; left: auto; right: 8%; animation-delay: 1.6s; }
-.tag-spreadsheets { top: 65%; left: auto; right: 12%; animation-delay: 2.4s; }
+.tag-emails       { top: 10%; left: 8%; right: auto; animation-delay: 0s; }
+.tag-phone        { top: 45%; left: 2%; right: auto; animation-delay: 2s; }
+.tag-leads        { top: 75%; left: 8%; right: auto; animation-delay: 4s; }
+.tag-whatsapp     { top: 10%; left: auto; right: 8%; animation-delay: 0.8s; }
+.tag-bookings     { top: 36%; left: auto; right: 2%; animation-delay: 1.6s; }
+.tag-spreadsheets { top: 65%; left: auto; right: 6%; animation-delay: 2.4s; }
 .tag-followups    { top: auto; bottom: -5%; left: calc(50% - 65px); right: auto; animation-delay: 3.2s; }
 
 /* ==========================================
@@ -754,41 +754,41 @@ a {
 /* CSS transforms are perfect to position around center */
 .card-whatsapp-auto {
   top: 14%;
-  left: 14%;
+  left: 8%;
   right: auto;
 }
 
 .card-email-auto {
   top: 50%;
-  left: 8%;
+  left: 2%;
   right: auto;
   transform: translateY(-50%);
 }
 
 .card-saas {
   top: 78%;
-  left: 14%;
+  left: 8%;
   right: auto;
 }
 
 .card-voice {
   top: 14%;
   left: auto;
-  right: 2%;
+  right: 8%;
   transform: none;
 }
 
 .card-booking-auto {
   top: 50%;
   left: auto;
-  right: -4%;
+  right: 2%;
   transform: translateY(-50%);
 }
 
 .card-crm {
   top: 78%;
   left: auto;
-  right: 2%;
+  right: 8%;
   transform: none;
 }
 
