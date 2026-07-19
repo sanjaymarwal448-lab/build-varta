@@ -753,7 +753,7 @@ a {
 /* R = ~175px, center is 50%, 50% */
 /* CSS transforms are perfect to position around center */
 .card-whatsapp-auto {
-  top: 26%;
+  top: 18%;
   left: 8%;
   right: auto;
 }
@@ -766,13 +766,13 @@ a {
 }
 
 .card-saas {
-  top: 74%;
+  top: 82%;
   left: 8%;
   right: auto;
 }
 
 .card-voice {
-  top: 26%;
+  top: 18%;
   left: auto;
   right: 8%;
   transform: none;
@@ -786,7 +786,7 @@ a {
 }
 
 .card-crm {
-  top: 74%;
+  top: 82%;
   left: auto;
   right: 8%;
   transform: none;
