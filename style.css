@@ -244,7 +244,7 @@ a {
 .hero-section {
   max-width: 1340px;
   margin: 0 auto;
-  padding: 6.25rem 2rem 1.5rem;
+  padding: 6.25rem 2rem 5rem;
 }
 
 .hero-intro {
@@ -506,7 +506,8 @@ a {
 }
 
 .chaos-tag:hover {
-  transform: scale(1.05) translateY(-5px);
+  scale: 1.05;
+  margin-top: -5px;
   box-shadow: var(--shadow-md);
   border-color: rgba(255, 78, 0, 0.3);
 }
@@ -753,28 +754,24 @@ a {
 /* CSS transforms are perfect to position around center */
 .card-voice {
   top: 4%;
-  left: 12%;
-}
-
-.card-whatsapp-auto {
-  top: 24%;
-  left: 2%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .card-booking-auto {
-  top: 4%;
-  right: 12%;
+  top: 20%;
+  right: 8%;
 }
 
 .card-crm {
   top: 50%;
-  right: -2%;
+  right: -6%;
   transform: translateY(-50%);
 }
 
 .card-avatars {
-  top: 74%;
-  right: 2%;
+  top: 80%;
+  right: 8%;
 }
 
 .card-social {
@@ -784,19 +781,24 @@ a {
 }
 
 .card-saas {
-  top: 74%;
-  left: 2%;
+  top: 80%;
+  left: 8%;
 }
 
 .card-email-auto {
   top: 50%;
-  left: -2%;
+  left: -6%;
   transform: translateY(-50%);
 }
 
-/* Card Visual Hover & Active states */
+.card-whatsapp-auto {
+  top: 20%;
+  left: 8%;
+}
+
 .orbit-card:hover {
-  transform: scale(1.05) translateY(-5px);
+  scale: 1.05;
+  margin-top: -5px;
   box-shadow: var(--shadow-md), 0 8px 24px rgba(255, 78, 0, 0.05);
   border-color: rgba(255, 78, 0, 0.25);
   z-index: 10;
@@ -844,12 +846,18 @@ a {
    6. CREDIBILITY & STATS BAR
    ========================================== */
 .stats-bar-wrapper {
-  margin-top: 2.25rem;
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  max-width: 1200px;
+  z-index: 100;
 }
 
 .stats-bar {
   background-color: #FFFFFF;
-  border-radius: 9999px;
+  border-radius: 8px;
   border: 1px solid rgba(229, 231, 235, 0.8);
   padding: 0.6rem 1.5rem;
   box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.08);
@@ -1009,28 +1017,28 @@ a {
 /* Floating items animations */
 @keyframes float {
   0%, 100% {
-    transform: translateY(0px);
+    margin-top: 0px;
   }
   50% {
-    transform: translateY(-12px);
+    margin-top: -3px;
   }
 }
 
 @keyframes float-even {
   0%, 100% {
-    transform: translateY(0);
+    margin-top: 0px;
   }
   50% {
-    transform: translateY(-10px);
+    margin-top: -3px;
   }
 }
 
 @keyframes float-odd {
   0%, 100% {
-    transform: translateY(0);
+    margin-top: 0px;
   }
   50% {
-    transform: translateY(10px);
+    margin-top: 3px;
   }
 }
 
