@@ -652,6 +652,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 60px;
 }
 
 .circle-ring {
@@ -678,6 +679,7 @@ a {
   box-shadow: var(--shadow-sm), 0 0 0 6px rgba(255, 78, 0, 0.03), 0 0 0 12px rgba(255, 78, 0, 0.015);
   border: 1px solid rgba(255, 78, 0, 0.12);
   text-align: center;
+  margin-left: 60px;
 }
 
 .dial-glow {
@@ -754,13 +756,13 @@ a {
 /* CSS transforms are perfect to position around center */
 .card-voice {
   top: 4%;
-  left: 50%;
+  left: 62.5%;
   transform: translateX(-50%);
 }
 
 .card-booking-auto {
   top: 20%;
-  right: 8%;
+  right: 4%;
 }
 
 .card-crm {
@@ -771,29 +773,23 @@ a {
 
 .card-avatars {
   top: 80%;
-  right: 8%;
-}
-
-.card-social {
-  bottom: -4%;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 4%;
 }
 
 .card-saas {
-  top: 80%;
-  left: 8%;
+  bottom: -4%;
+  left: 62.5%;
+  transform: translateX(-50%);
 }
 
 .card-email-auto {
-  top: 50%;
-  left: -6%;
-  transform: translateY(-50%);
+  top: 76%;
+  left: 24%;
 }
 
 .card-whatsapp-auto {
-  top: 20%;
-  left: 8%;
+  top: 24%;
+  left: 24%;
 }
 
 .orbit-card:hover {
