@@ -1118,12 +1118,7 @@ a {
     padding: 0.5rem 0.7rem;
   }
 
-  .card-voice          { top: 5%; left: 5%; }
-  .card-booking-auto   { top: 12%; right: 2%; }
-  .card-crm            { top: 48%; right: -8%; }
-  .card-avatars        { bottom: 12%; right: 1%; }
-  .card-saas           { bottom: 14%; left: 1%; }
-  .card-email-auto     { top: 48%; left: -8%; }
+
   
   .stats-bar {
     border-radius: 30px;
