@@ -1370,7 +1370,7 @@ a {
 .badge-line {
   width: 24px;
   height: 2px;
-  background-color: var(--primary-orange);
+  background-color: var(--orange-primary);
   border-radius: 2px;
 }
 
@@ -1378,7 +1378,7 @@ a {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: var(--primary-orange);
+  color: var(--orange-primary);
   text-transform: uppercase;
 }
 
@@ -1392,7 +1392,7 @@ a {
 }
 
 .highlight-orange {
-  color: var(--primary-orange);
+  color: var(--orange-primary);
   background: linear-gradient(135deg, #FF4E00 0%, #FF7A00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1418,7 +1418,7 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--primary-orange);
+  background-color: var(--orange-primary);
   color: #FFFFFF;
   display: flex;
   align-items: center;
@@ -1429,7 +1429,7 @@ a {
 
 .services-cta-btn:hover .cta-arrow-circle {
   transform: translateX(4px) scale(1.05);
-  background-color: var(--primary-orange-hover);
+  background-color: #E04500;
   box-shadow: 0 6px 20px rgba(255, 78, 0, 0.35);
 }
 
@@ -1443,8 +1443,8 @@ a {
 }
 
 .services-cta-btn:hover .cta-text {
-  color: var(--primary-orange);
-  border-color: var(--primary-orange);
+  color: var(--orange-primary);
+  border-color: var(--orange-primary);
 }
 
 /* Right Features List Area */
@@ -1493,9 +1493,46 @@ a {
 }
 
 .feature-item:hover .feature-icon {
-  color: var(--primary-orange);
+  color: var(--orange-primary);
   background-color: rgba(255, 78, 0, 0.1);
   border-color: rgba(255, 78, 0, 0.2);
+}
+
+/* Services Stats Bar Avatar Stack Styling */
+.services-stats-bar .avatar-stack {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.services-stats-bar .avatar-stack img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #FFFFFF;
+  margin-left: -10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-stats-bar .avatar-stack img:first-child {
+  margin-left: 0;
+}
+
+.services-stats-bar .avatar-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--orange-primary);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #FFFFFF;
+  margin-left: -10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .feature-content {
