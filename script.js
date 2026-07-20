@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollHeader();
   initFaqAccordion();
   initBackToTop();
+  initScrollObserver();
+  initSmoothScrollLinks();
 });
 
 /**
@@ -273,6 +275,57 @@ function initBackToTop() {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
+    });
+  });
+}
+
+/**
+ * 7. Intersection Observer for Entrance Scroll Animations
+ */
+function initScrollObserver() {
+  const elements = document.querySelectorAll('.reveal-on-scroll');
+  if (!elements.length) return;
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.15
+  };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  elements.forEach((el) => observer.observe(el));
+}
+
+/**
+ * 8. Smooth Scrolling Anchor Links
+ */
+function initSmoothScrollLinks() {
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#' || !targetId) return;
+
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        e.preventDefault();
+        const headerOffset = 90;
+        const elementPosition = targetEl.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
     });
   });
 }
