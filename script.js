@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initOrbitInteractions();
   initScrollHeader();
   initFaqAccordion();
+  initBackToTop();
 });
 
 /**
@@ -257,6 +258,21 @@ function initFaqAccordion() {
         item.classList.add('active');
         questionBtn.setAttribute('aria-expanded', 'true');
       }
+    });
+  });
+}
+
+/**
+ * 6. Back-to-Top Button Handler
+ */
+function initBackToTop() {
+  const backToTopBtn = document.getElementById('back-to-top');
+  if (!backToTopBtn) return;
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
     });
   });
 }
